@@ -79,7 +79,7 @@ DVWA實戰
 
 [5]IOT安全技術
 
-使用honeypot技術
+使用honeypot技術分析IOT攻擊
 
 IOT Honeypot技術實測[參考下列論文及reference]
 
@@ -130,10 +130,15 @@ https://security.cse.iitk.ac.in/sites/default/files/15111021.pdf
 
 
 
-[期中報告]物聯網十大威脅
+[期中報告]物聯網十大威脅與安全測試
+
 OWASP Internet of Things Project
 
 https://www.owasp.org/index.php/OWASP_Internet_of_Things_Project
+
+IoT Testing Guides
+
+https://www.owasp.org/index.php/IoT_Testing_Guides
 
 
 
