@@ -38,6 +38,7 @@ noSqlmap
 
 
 網站十大威脅(2017)
+
 https://www.owasp.org/index.php/Category:OWASP_Top_Ten_2017_Project
 
 A1:2017-Injection
@@ -118,9 +119,15 @@ https://fernandokuipers.nl/papers/ThingPot.pdf
 
 [6]論文導讀
 
-Understanding Security Flaws of IoT Protocols through Honeypot Technologies
+[6.1]Understanding Security Flaws of IoT Protocols through Honeypot Technologies
 
 https://repository.tudelft.nl/islandora/object/uuid:f4be5514-e9df-499a-8eea-f78c510d3346
+
+
+[6.2]Capturing attacks on IoT devices with a multi-purpose IoT honeypot
+
+https://security.cse.iitk.ac.in/sites/default/files/15111021.pdf
+
 
 
 [期中報告]物聯網十大威脅
@@ -135,5 +142,19 @@ https://www.owasp.org/index.php/OWASP_Internet_of_Things_Project
 
 建置dvwa測試平台在Raspberry PI 3
 websecurity@IOT devices
+
+
+NeXT
+
+韌體分析與binwwalk技術
+
+IOT惡意程式分析[1]Mirai Bot 
+
+https://github.com/brussell98/Mirai
+
+IOT惡意程式分析[2]Ares::Python Remote Access Tool.
+
+https://github.com/sweetsoftware/Ares
+
 
 
