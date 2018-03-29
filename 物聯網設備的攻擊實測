@@ -1,0 +1,57 @@
+期末專案:物聯網設備的攻擊實測
+
+建置dvwa測試平台在Raspberry PI 3 websecurity@IOT devices
+
+
+====================================================
+[1]下載
+你可你裝裝其他作業系統玩玩看
+
+訪問樹莓派官網https://www.raspberrypi.org/
+
+在樹莓派作業系統的下載頁面選擇你要的:
+https://www.raspberrypi.org/downloads/
+
+本次練習:下載UbuntuMATE系統鏡像。
+
+點擊Ubuntu MATE系統圖標後會跳轉到下載頁面https://ubuntu-mate.org/raspberry-pi/。
+
+下載:https://ubuntu-mate.org/raspberry-pi/
+
+[2]安裝{1}:使用Windows的Win32DiskImager
+
+下載Win32DiskImager:  https://sourceforge.net/projects/win32diskimager/
+
+安裝Win32DiskImager:
+
+使用Windows的Win32DiskImager寫入Ubuntu
+
+Insert the SD card into your SD card reader. You can use the SD card slot if you have one, or an SD adapter in a USB port. 
+
+Note the drive letter assigned to the SD card. You can see the drive letter in the left hand column of Windows Explorer, for example G:
+
+
+Download the Win32DiskImager utility from the Sourceforge Project page as an installer file, and run it to install the software.
+
+Run the Win32DiskImager utility from your desktop or menu.
+
+Select the image file you extracted earlier.
+
+In the device box, select the drive letter of the SD card. Be careful to select the correct drive: if you choose the wrong drive you could destroy the data on your computer's hard disk! If you are using an SD card slot in your computer, and can't see the drive in the Win32DiskImager window, try using an external SD adapter.
+
+Click 'Write' and wait for the write to complete.
+
+Exit the imager and eject the SD card.
+
+https://www.youtube.com/watch?v=EBBwymU9HOM
+
+
+sudo apt-get install gddrescue xz-utils
+
+unxz ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz
+
+sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /dev/sdx
+
+----------------------------------------
+
+
