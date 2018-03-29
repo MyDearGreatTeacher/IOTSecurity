@@ -54,4 +54,24 @@ sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /dev
 
 ----------------------------------------
 
+sudo apt-get install apache2 php libapache2-mod-php php-curl php-mcrypt php-mbstring phpunit php-gd -y
+sudo apt-get install mysql-server php-mysqli -y
+sudo service apache2 restart
+
+cd /var/www/html
+git clone https://github.com/ethicalhack3r/DVWA.git
+cp DVWA/config/config.inc.php.dist DVWA/config/config.inc.php
+
+vim DVWA/config/config.inc.php
+-----------------------------------------------------
+$_DVWA[ 'db_user' ] = 'root';
+$_DVWA[ 'db_password' ] = 'xxxxxxxxxx';
+
+
+$_DVWA[ 'recaptcha_public_key' ] = 'xxxxxxxxxxxxxx';
+$_DVWA[ 'recaptcha_private_key' ] = 'xxxxxxxxxxxxx';
+
+$_DVWA[ 'default_security_level' ] = ‘low';
+-----------------------------------------------------
+
 
