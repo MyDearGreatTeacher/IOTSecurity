@@ -12,7 +12,7 @@ Decommissioning system
 
 Lost access procedures
 
-Device Memory	
+## Device Memory攻擊設備的記憶體	
 
 Cleartext usernames
 
@@ -22,9 +22,9 @@ Third-party credentials
 
 Encryption keys
 
-Device Physical Interfaces	
+##  Device Physical Interfaces	攻擊設備的實體存取介面
 
-Firmware extraction
+Firmware extraction提取韌體
 
 User CLI
 
