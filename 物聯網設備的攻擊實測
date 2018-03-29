@@ -132,3 +132,7 @@ $_DVWA[ 'default_security_level' ] = ‘low';
 sudo chmod +777  /var/www/html/DVWA/hackable/uploads/
 sudo chmod  +777 /var/www/html/DVWA/external/phpids/0.6/lib/IDS/tmp/phpids_log.txt
 
+
+
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_security-with-apache-on-debian-ubuntu
