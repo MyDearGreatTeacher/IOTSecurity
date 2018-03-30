@@ -52,8 +52,22 @@ Building your own smart speaker machine
 Summary
 
 6: AUTONOMOUS FIREFIGHTER ROBOT
+Introducing autonomous firefighter robots
+Exploring robot platforms
+Detecting a fire source
+Basic remote robot navigation
+Detecting obstacles
+Designing an autonomous robot
+Building an autonomous firefighter robot
+Summary
 
 7: MULTI-ROBOT COOPERATION USING SWARM INTELLIGENCE
+Introducing multi-robot cooperation
+Learning about swarm intelligence
+Implementing mesh network for multi-robot cooperation
+XBee development for Arduino
+Designing a multi-robot cooperation model using swarm intelligence
+Summary
 
 8: ESSENTIAL HARDWARE COMPONENTS
 ```
