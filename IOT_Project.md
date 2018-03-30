@@ -1,8 +1,5 @@
-Intelligent IoT Projects in 7 Days
+# Intelligent IoT Projects in 7 Days  by Agus Kurniawan September 2017
 
-Agus Kurniawan
-
-September 2017
 ```
 1: A SIMPLE SMART GARDENING SYSTEM
 Introducing smart gardening system
