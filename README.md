@@ -14,32 +14,7 @@ Kali linux|nmap|metasploit
 自動化漏洞測試(或說是掃描)工具:sqlmap|noSqlmap
 漏洞掃描
 ```
-網站十大威脅(2017):https://www.owasp.org/index.php/Category:OWASP_Top_Ten_2017_Project
-
-A1:2017-Injection
-
-A2:2017-Broken Authentication
-
-A3:2017-Sensitive Data Exposure
-
-A4:2017-XML External Entities (XXE)
-
-A5:2017-Broken Access Control
-
-A6:2017-Security Misconfiguration
-
-A7:2017-Cross-Site Scripting (XSS)
-
-A8:2017-Insecure Deserialization
-
-A9:2017-Using Components with Known Vulnerabilities
-
-A10:2017-Insufficient Logging&Monitoring
-
-
 DVWA實戰
-
-
 
 ### [4]IOT滲透測試
 ```
@@ -75,7 +50,6 @@ Dionaea: A honeypot framework that, among others, implements a MQTT module.
 ZigBee Honeypot: A honeypot that simulates a ZigBee gateway.
 
 Multi-purpose IoT honeypot: An IoT honeypot that focuses on Telnet, SSH, HTTP and CWMP.
-
 https://security.cse.iitk.ac.in/sites/default/files/15111021.pdf
 
 ThingPot:https://fernandokuipers.nl/papers/ThingPot.pdf
@@ -106,17 +80,18 @@ https://www.owasp.org/index.php/IoT_Testing_Guides
 websecurity@IOT devices
 ```
 
-NeXT
+# NeXT
+```
+韌體分析(Firmware analysis)與binwwalk技術
+Pwning RASPBERRY PI 3
+```
 
-韌體分析與binwwalk技術
-
+```
 IOT惡意程式分析[1]Mirai Bot 
-
 https://github.com/brussell98/Mirai
 
 IOT惡意程式分析[2]Ares::Python Remote Access Tool.
-
 https://github.com/sweetsoftware/Ares
 
-
+```
 
