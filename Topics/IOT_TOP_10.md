@@ -1,6 +1,16 @@
 # OWASP Internet of Things Project
 ```
+IoT Attack Surface Areas:https://www.owasp.org/index.php/IoT_Attack_Surface_Areas
+IoT Vulnerabilities
+Firmware Analysis
+ICS/SCADA Software Weaknesses
+Community Information
+IoT Testing Guides:https://www.owasp.org/index.php/IoT_Testing_Guides
+IoT Security Guidance:https://www.owasp.org/index.php/IoT_Security_Guidance
+Principles of IoT Security:https://www.owasp.org/index.php/Principles_of_IoT_Security
 IoT Framework Assessment:https://www.owasp.org/index.php/IoT_Framework_Assessment
+Developer, Consumer and Manufacturer Guidance
+Design Principles
 
 ```
 ## OWASP Top 10 IoT Vulnerabilities(2014)
