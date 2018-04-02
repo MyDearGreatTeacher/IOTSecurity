@@ -115,7 +115,7 @@ $_DVWA[ 'default_phpids_verbose' ] = 'false';
 ?>
 ```
 ```
-註記:別注意單引號''
+註記:特別注意單引號''
 -----------------------------------------------------
 $_DVWA[ 'db_user' ] = 'root';
 $_DVWA[ 'db_password' ] = 'xxxxxxxxxx';
