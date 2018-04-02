@@ -14,9 +14,12 @@ Kali linux|nmap|metasploit
 自動化漏洞測試(或說是掃描)工具:sqlmap|noSqlmap
 漏洞掃描
 ```
+## [期末專案]:物聯網設備的攻擊實測(2018.3.29)(2018.4.13)
+```
+建置IOT漏洞平台:Raspberry PI 3 + Ubuntu MATE +DVWA
 DVWA實戰
-
-### [4]IOT滲透測試
+```
+### [4]IOT滲透測試(2018.4.20)
 ```
 攻擊IP camera
 攻擊IP Home Router
@@ -24,7 +27,7 @@ DVWA實戰
 攻擊智慧家庭設備
 ```
 
-### [5]IOT安全技術
+### [5]IOT安全技術(2018.4.27)
 ```
 使用honeypot技術分析IOT攻擊
 IOT Honeypot技術實測[參考下列論文及reference]
