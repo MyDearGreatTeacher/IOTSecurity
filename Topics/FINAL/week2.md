@@ -649,6 +649,8 @@ https://kikinote.net/3780
 
 ### apache log 格式轉換
 ```
+https://github.com/kadnan/logs2json/blob/master/apache/main.py
+https://github.com/lethain/apache-log-parser
 ```
 
 ### apache log 格式分析
