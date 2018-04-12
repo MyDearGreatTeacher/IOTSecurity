@@ -2,12 +2,18 @@
 
 ## 建置dvwa測試平台在Raspberry PI 3 websecurity@IOT devices
 
-### 漏洞測試
+#  Wek Attacks漏洞測試
 ```
-測試
+測試DVWA/command injection
+測試DVWA/SQLi
+測試DVWA/file inclusion
+測試DVWA/file upload 
+
+你知道webshell的威力嗎??
 
 
 ```
+#  Wek Adefense漏洞測試
 
 ### 檢視apache web server的log檔
 
@@ -602,6 +608,22 @@ SecRule REQUEST_COOKIES|!REQUEST_COOKIES:/__utm/|REQUEST_COOKIES_NAMES|ARGS_NAME
 
 ### apache log 格式解說
 ```
+如何在 Apache 設定 (Custom Log) Access Log 與 Error Log
+
+
+https://httpd.apache.org/docs/1.3/logs.html
+
+Apache Log檔 使用日期格式 當 檔名設定
+https://blog.longwin.com.tw/2014/08/apache-set-log-filename-use-date-format-2014/
+
+Apache Log Rotate 設定
+https://www.phpini.com/apache/apache-log-rotate
+
+分割apache Log文件 
+https://dotblogs.com.tw/grayyin/2016/09/13/161658
+
+如何在 Apache 設定 (Custom Log) Access Log 與 Error Log
+https://kikinote.net/3780
 ```
 
 ### apache log 格式轉換
@@ -615,4 +637,6 @@ SecRule REQUEST_COOKIES|!REQUEST_COOKIES:/__utm/|REQUEST_COOKIES_NAMES|ARGS_NAME
 ```
 ```
 
+### 備份Apache Log
 
+### 
