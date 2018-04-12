@@ -344,8 +344,11 @@ sudo cp /usr/share/modsecurity-crs/base_rules/modsecurity_crs_41_sql_injection_a
 sudo service apache2 reload
 
 
-
 ```
+
+### 檢視modsecurity_crs_41_sql_injection_attacks
+
+cat modsecurity_crs_41_sql_injection_attacks.conf
 ```
 
 # ---------------------------------------------------------------
@@ -594,3 +597,22 @@ SecRule REQUEST_COOKIES|!REQUEST_COOKIES:/__utm/|REQUEST_COOKIES_NAMES|ARGS_NAME
 
 SecRule REQUEST_COOKIES|!REQUEST_COOKIES:/__utm/|REQUEST_COOKIES_NAMES|ARGS_NAMES|ARGS|XML:/* "(?i:(?:[\"'`´’‘]\s*?\*.+(?:x?or|div|like|between|and|id)\W*?[\"'`´’‘]\d)|(?:\^[\"'`´’‘])|(?:^[\w\s\"'`´’‘-]+(?<=and\s)(?<=or|xor|div|like|between|and\s)(?<=xor\s)(?<=nand\s)(?<=not\s)(?<=\|\|)(?<=\&\&)\w+\()|(?:[\"'`´’‘][\s\d]*?[^\w\s]+\W*?\d\W*?.*?[\"'`´’‘\d])|(?:[\"'`´’‘]\s*?[^\w\s?]+\s*?[^\w\s]+\s*?[\"'`´’‘])|(?:[\"'`´’‘]\s*?[^\w\s]+\s*?[\W\d].*?(?:#|--))|(?:[\"'`´’‘].*?\*\s*?\d)|(?:[\"'`´’‘]\s*?(x?or|div|like|between|and)\s[^\d]+[\w-]+.*?\d)|(?:[()\*<>%+-][\w-]+[^\w\s]+[\"'`´’‘][^,]))" "phase:2,capture,t:none,t:urlDecodeUni,block,msg:'Detects classic SQL injection probings 2/2',id:'981243',tag:'OWASP_CRS/WEB_ATTACK/SQL_INJECTION',logdata:'Matched Data: %{TX.0} found within %{MATCHED_VAR_NAME}: %{MATCHED_VAR}',severity:'2',setvar:'tx.msg=%{rule.id}-%{rule.msg}',setvar:tx.sql_injection_score=+1,setvar:tx.anomaly_score=+%{tx.critical_anomaly_score},setvar:'tx.%{tx.msg}-OWASP_CRS/WEB_ATTACK/SQLI-%{matched_var_name}=%{tx.0}'"
 ```
+
+# apache reference
+
+### apache log 格式解說
+```
+```
+
+### apache log 格式轉換
+```
+```
+
+### apache log 格式分析
+```
+```
+### apache log 格式解析器(log parser)
+```
+```
+
+
