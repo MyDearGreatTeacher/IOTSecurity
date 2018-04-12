@@ -133,3 +133,57 @@ sudo chmod  +777 /var/www/html/DVWA/external/phpids/0.6/lib/IDS/tmp/phpids_log.t
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_security-with-apache-on-debian-ubuntu
 ```
+
+### 安裝 Mutillidae
+
+```
+cd /var/www/html
+sudo wget https://jaist.dl.sourceforge.net/project/mutillidae/mutillidae-project/LATEST-mutillidae-2.6.60.zip
+
+sudo vim mutillidae/classes/MySQLHandler.php
+------------------------------------------------------
+static public $mMySQLDatabaseUsername = root;
+static public $mMySQLDatabasePassword = XXXXXXXXXX;
+------------------------------------------------------
+
+sudo rm -rf mutillidae/.htaccess
+
+
+```
+### 安裝 bwapp
+
+### 安裝 NodeGoat 
+
+```
+raspberry pi 要設定當前時間
+sudo date -s "2018/03/29 22:38:32"
+```
+
+```
+sudo apt-get update
+sudo apt-get install nodejs
+sudo apt-get install npm
+sudo apt install nodejs-legacy
+```
+
+```
+git clone https://github.com/OWASP/NodeGoat.git
+cd NodeGoat
+npm install
+```
+啟動NodeGoat==>npm start
+```
+Admin Account - u:admin p:Admin_123
+User Accounts (u:user1 p:User1_123), (u:user2 p:User2_123)
+New users can also be added using the sign-up page.
+```
+
+打開瀏覽器 http://localhost:4000/
+
+
+
+
+
+
+```
+
