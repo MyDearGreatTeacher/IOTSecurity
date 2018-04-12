@@ -182,16 +182,17 @@ New users can also be added using the sign-up page.
 
 
 
-# 安裝docker
+# docker
 ```
 sudo apt install docker.io
 ```
+
 docker -v
 
 Docker version 1.13.1, build 092cba3
-```
 
- sudo docker --help
+
+### 查看指令==>sudo docker --help
 ```
 Usage:  docker COMMAND
 
@@ -266,4 +267,6 @@ Commands:
   wait        Block until one or more containers stop, then print their exit codes
 
 Run 'docker COMMAND --help' for more information on a command.
+
 ```
+
