@@ -1,4 +1,4 @@
-# 期末專案:物聯網設備的攻擊實測
+# 期末專案:物聯網設備的攻擊實測 Web attack and Defense@IOT devices
 
 ## 建置dvwa測試平台在Raspberry PI 3 websecurity@IOT devices
 
@@ -10,10 +10,16 @@
 測試DVWA/file upload 
 
 你知道webshell的威力嗎??
+https://baike.baidu.com/item/WEBSHELL
+https://blog.allenchou.cc/b374k-webshell/
+https://github.com/tennc/webshell
+https://www.jianshu.com/p/02aac12e459f
+http://www.freebuf.com/news/topnews/118424.html
 
-
+如何全面防禦Webshell
+https://zhuanlan.zhihu.com/p/24722552
 ```
-#  Wek Adefense漏洞測試
+#  Wek Defense漏洞測試
 
 ### 檢視apache web server的log檔
 
