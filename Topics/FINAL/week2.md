@@ -641,8 +641,33 @@ https://kikinote.net/3780
 ```
 ### apache log 格式解析器(log parser)
 ```
+Json Formatter for the standard python logger
+https://github.com/madzak/python-json-logger
+
+JSON-log-formatter 0.1.0
+https://pypi.python.org/pypi/JSON-log-formatter/0.1.0
+
+python-json-logger 0.1.8
+https://pypi.python.org/pypi/python-json-logger
+
+
+
+general-log-parser 0.1.7
+https://pypi.python.org/pypi/general-log-parser
+
+pylogsparser 0.2
+https://pypi.python.org/pypi/pylogsparser/0.2
+
+
+Basic Log parsing in python
+https://www.youtube.com/watch?v=TE3t7654d-s
+
+Python Tutorial: Automate Parsing and Renaming of Multiple Files
+https://www.youtube.com/watch?v=ve2pmm5JqmI
+
+Python Tutorial: Working with JSON Data using the json Module
+https://www.youtube.com/watch?v=9N6a-VLBa2I
 ```
 
 ### 備份Apache Log
 
-### 
