@@ -2,7 +2,7 @@
 
 ## 建置dvwa測試平台在Raspberry PI 3 websecurity@IOT devices
 
-#  Wek Attacks漏洞測試
+#  Web Attacks漏洞測試
 ```
 測試DVWA/command injection
 測試DVWA/SQLi
@@ -19,7 +19,7 @@ http://www.freebuf.com/news/topnews/118424.html
 如何全面防禦Webshell
 https://zhuanlan.zhihu.com/p/24722552
 ```
-#  Wek Defense漏洞測試
+#  Web Defense漏洞測試
 
 ### 檢視apache web server的log檔
 
