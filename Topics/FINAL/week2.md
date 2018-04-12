@@ -4,6 +4,7 @@
 
 ### 漏洞測試
 ```
+測試
 
 
 ```
@@ -281,4 +282,19 @@ led version="2.9.2"
 172.20.168.106 - - [12/Apr/2018:04:57:20 +0800] "GET /DVWA/vulnerabilities/sqli/?id=1%27+or+%271%27+%3D+%271&Submit=Submit HTTP/1.1" 403 531 "http://172.20.168.86/DVWA/vulnerabilities/sqli/?id=3&Submit=Submit" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
 
 
+```
+### 安裝modsecurity
+```
+sudo apt-get update
+sudo apt-get install libapache2-modsecurity -y
+
+sudo a2enconf fqdn && sudo systemctl reload apache2
+sudo  service apache2 reload
+sudo apachectl -M | grep --color security2
+
+sudo mv /etc/modsecurity/modsecurity.conf-recommended /etc/modsecurity/modsecurity.conf
+sudo service apache2 reload
+
+sudo sed -i "s/SecRuleEngine DetectionOnly/SecRuleEngine On/" /etc/modsecurity/modsecurity.conf
+sudo sed -i "s/SecResponseBodyAccess On/SecResponseBodyAccess Off/" /etc/modsecurity/modsecurity.conf
 ```
