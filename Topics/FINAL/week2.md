@@ -613,7 +613,7 @@ SecRule REQUEST_COOKIES|!REQUEST_COOKIES:/__utm/|REQUEST_COOKIES_NAMES|ARGS_NAME
 
 #  Web RE-Attacks漏洞測試
 ```
-使用nmao偵測WAF
+使用nmap偵測WAF
 
 使用SQLmap偵測WAF
 
