@@ -611,6 +611,20 @@ SecRule REQUEST_COOKIES|!REQUEST_COOKIES:/__utm/|REQUEST_COOKIES_NAMES|ARGS_NAME
 SecRule REQUEST_COOKIES|!REQUEST_COOKIES:/__utm/|REQUEST_COOKIES_NAMES|ARGS_NAMES|ARGS|XML:/* "(?i:(?:[\"'`´’‘]\s*?\*.+(?:x?or|div|like|between|and|id)\W*?[\"'`´’‘]\d)|(?:\^[\"'`´’‘])|(?:^[\w\s\"'`´’‘-]+(?<=and\s)(?<=or|xor|div|like|between|and\s)(?<=xor\s)(?<=nand\s)(?<=not\s)(?<=\|\|)(?<=\&\&)\w+\()|(?:[\"'`´’‘][\s\d]*?[^\w\s]+\W*?\d\W*?.*?[\"'`´’‘\d])|(?:[\"'`´’‘]\s*?[^\w\s?]+\s*?[^\w\s]+\s*?[\"'`´’‘])|(?:[\"'`´’‘]\s*?[^\w\s]+\s*?[\W\d].*?(?:#|--))|(?:[\"'`´’‘].*?\*\s*?\d)|(?:[\"'`´’‘]\s*?(x?or|div|like|between|and)\s[^\d]+[\w-]+.*?\d)|(?:[()\*<>%+-][\w-]+[^\w\s]+[\"'`´’‘][^,]))" "phase:2,capture,t:none,t:urlDecodeUni,block,msg:'Detects classic SQL injection probings 2/2',id:'981243',tag:'OWASP_CRS/WEB_ATTACK/SQL_INJECTION',logdata:'Matched Data: %{TX.0} found within %{MATCHED_VAR_NAME}: %{MATCHED_VAR}',severity:'2',setvar:'tx.msg=%{rule.id}-%{rule.msg}',setvar:tx.sql_injection_score=+1,setvar:tx.anomaly_score=+%{tx.critical_anomaly_score},setvar:'tx.%{tx.msg}-OWASP_CRS/WEB_ATTACK/SQLI-%{matched_var_name}=%{tx.0}'"
 ```
 
+#  Web RE-Attacks漏洞測試
+```
+使用nmao偵測WAF
+
+使用SQLmap偵測WAF
+
+
+使用SQLmap繞過WAF
+SQLMap Tamper Scripts (SQL Injection and WAF bypass) 
+https://forum.bugcrowd.com/t/sqlmap-tamper-scripts-sql-injection-and-waf-bypass/423
+https://securityonline.info/sql-injection-bypass-waf-using-tamper-script-sqlmap/
+https://zhuanlan.zhihu.com/p/25678670
+
+```
 # apache reference
 
 ### apache log 格式解說
@@ -672,3 +686,81 @@ https://www.youtube.com/watch?v=9N6a-VLBa2I
 
 ### 備份Apache Log
 
+
+### docker --help
+```
+Usage:  docker COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/home/ksu/.docker")
+  -D, --debug              Enable debug mode
+      --help               Print usage
+  -H, --host list          Daemon socket(s) to connect to (default [])
+  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/ksu/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/ksu/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/ksu/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  container   Manage containers
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  volume      Manage volumes
+
+Commands:
+  attach      Attach to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+```
