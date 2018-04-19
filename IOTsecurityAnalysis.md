@@ -37,7 +37,9 @@ PATH = C:\Program Files\Java\jdk1.8.0_171\bin;%PATH%
 
 ### 安裝elastic search(使用msi)
 ```
-
+![ElasticSearch_1](pic/ElasticSearch_1.png)
+![ElasticSearch_2](pic/ElasticSearch_2.png)
+![ElasticSearch_4](pic/ElasticSearch_4.png)
 ```
 ### 安裝elastic search
 
