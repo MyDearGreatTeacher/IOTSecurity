@@ -32,6 +32,9 @@ C:\Program Files\Java\jdk1.8.0_171\bin
 
 PATH = C:\Program Files\Java\jdk1.8.0_171\bin;%PATH%
 ```
+
+# 安裝伺服器系統
+
 ### 安裝elastic search
 
 ```
@@ -82,8 +85,9 @@ C:\Program Files\kibana\bin\kibana.bat
 
 http://127.0.0.1:5601/
 ```
+# 安裝客戶端資料傳送軟體
 
-### 安裝 winlogbeat
+### 安裝 winlogbeat@Windows
 
 ```
 [1]下載
@@ -136,8 +140,7 @@ http://localhost:9200/winlogbeat-*
 
 Start-Service winlogbeat
 ```
-
-### ElasticSearch @ Ubuntu Linux 16.04 LTS(64-bit)
+### 安裝 logstash@Ubuntu MATE (64-bit)
 
 ```
 sudo apt-get install openjdk-8-jre
