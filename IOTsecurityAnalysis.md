@@ -8,6 +8,8 @@
 
 ### 安裝 Java 8
 ```
+ Java SE Development Kit 8u171
+ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 ```
 ### 安裝elastic search
@@ -15,6 +17,7 @@
 ```
 [1]下載Download and unzip Elasticsearch
 
+https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html
 https://www.elastic.co/downloads
 
 elasticsearch-6.2.2.zip
