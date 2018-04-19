@@ -35,6 +35,10 @@ PATH = C:\Program Files\Java\jdk1.8.0_171\bin;%PATH%
 
 # 安裝伺服器系統
 
+### 安裝elastic search(使用msi)
+```
+
+```
 ### 安裝elastic search
 
 ```
