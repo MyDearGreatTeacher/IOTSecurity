@@ -5,12 +5,22 @@
 [阿里云 · Elasticsearch](https://data.aliyun.com/product/elasticsearch?utm_content=se_1309736&gclid=Cj0KCQjw_ODWBRCTARIsAE2_EvWXzaSpLpM_EsKh8t-LvGNOoN6WQRHOpyFFCM0k01K4TzF4JXo7GT0aAo8YEALw_wcB)
 
 # 本次實測環境
+```
+特別留意軟體版本之差異
+安裝elasticsearch前須先安裝Java
+目前支援版本:Java 8(特別測試版本相容度)
+```
+本次環境安裝分成兩部分:
+>* 安裝elasticsearch伺服器+Kibana
+>* 安裝客戶端資料傳送軟體
+
+
 
 ### 安裝 Java 8
 ```
  Java SE Development Kit 8u171
  http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 ```
 ### 安裝elastic search
 
