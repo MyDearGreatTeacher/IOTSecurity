@@ -21,6 +21,16 @@
  Java SE Development Kit 8u171
  http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+執行 echo %Path%指令來看看目前的 Path 變數設定
+
+第一次安裝 JDK,並且從未修改過 Path 變數,則可以發現 Path 變數中並沒有包括 JDK 目錄下的 bin 資料夾,
+也就是 JDK 工具程式所在的資料夾,所以當您下javac 指令時,作業系統不知道該至 bin 目錄下找 javac 工具程式。
+
+確認執行檔目錄:
+C:\Program Files\Java\jdk1.8.0_171\bin
+
+PATH = C:\Program Files\Java\jdk1.8.0_171\bin;%PATH%
 ```
 ### 安裝elastic search
 
